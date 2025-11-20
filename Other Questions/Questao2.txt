@@ -1,0 +1,39 @@
+Questao 2 - Git Flow
+
+Estrutura:
+- master (producao)
+- develop (desenvolvimento)
+
+Solicitacoes recebidas:
+1. Correcao de erro
+2. Criacao de nova funcionalidade
+
+Como criar as branches segundo Git Flow:
+
+1. NOVA FUNCIONALIDADE
+   - Criar branch: feature/nome-da-funcionalidade
+   - A partir de: develop
+   - Comando: git checkout develop
+              git checkout -b feature/nome-da-funcionalidade
+   - Apos finalizar: merge de volta para develop
+
+2. CORRECAO DE ERRO
+
+   Opcao A - Se o erro esta em PRODUCAO (master):
+   - Criar branch: hotfix/nome-do-erro
+   - A partir de: master
+   - Comando: git checkout master
+              git checkout -b hotfix/nome-do-erro
+   - Apos finalizar: merge para master E develop
+
+   Opcao B - Se o erro esta em DESENVOLVIMENTO (develop):
+   - Criar branch: bugfix/nome-do-erro
+   - A partir de: develop
+   - Comando: git checkout develop
+              git checkout -b bugfix/nome-do-erro
+   - Apos finalizar: merge de volta para develop
+
+Resumo:
+- Feature = nova funcionalidade (de develop)
+- Hotfix = bug urgente em producao (de master)
+- Bugfix = bug em desenvolvimento (de develop)
