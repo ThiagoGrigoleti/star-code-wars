@@ -1,4 +1,4 @@
-package br.com.seuprojeto.starcodewars.service;
+package br.com.thiago.starcodewars.service;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;

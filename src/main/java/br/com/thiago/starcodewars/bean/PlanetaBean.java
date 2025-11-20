@@ -1,7 +1,7 @@
-package br.com.seuprojeto.starcodewars.bean;
+package br.com.thiago.starcodewars.bean;
 
-import br.com.seuprojeto.starcodewars.model.Planeta;
-import br.com.seuprojeto.starcodewars.service.PlanetaServico;
+import br.com.thiago.starcodewars.model.Planeta;
+import br.com.thiago.starcodewars.service.PlanetaServico;
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;

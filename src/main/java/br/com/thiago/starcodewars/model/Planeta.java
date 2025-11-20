@@ -1,4 +1,4 @@
-package br.com.seuprojeto.starcodewars.model;
+package br.com.thiago.starcodewars.model;
 
 import javax.persistence.*;
 import java.io.Serializable;

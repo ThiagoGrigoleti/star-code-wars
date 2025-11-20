@@ -1,7 +1,7 @@
-package br.com.seuprojeto.starcodewars.service;
+package br.com.thiago.starcodewars.service;
 
-import br.com.seuprojeto.starcodewars.repository.PlanetaDao;
-import br.com.seuprojeto.starcodewars.model.Planeta;
+import br.com.thiago.starcodewars.repository.PlanetaDao;
+import br.com.thiago.starcodewars.model.Planeta;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import java.util.List;

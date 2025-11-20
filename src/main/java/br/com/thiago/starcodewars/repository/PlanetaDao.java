@@ -1,6 +1,6 @@
-package br.com.seuprojeto.starcodewars.repository;
+package br.com.thiago.starcodewars.repository;
 
-import br.com.seuprojeto.starcodewars.model.Planeta;
+import br.com.thiago.starcodewars.model.Planeta;
 import javax.enterprise.context.ApplicationScoped;
 import javax.persistence.*;
 import java.util.List;
