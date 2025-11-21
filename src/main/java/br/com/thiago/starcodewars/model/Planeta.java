@@ -5,15 +5,14 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "planetas")
-
 public class Planeta implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String nome;
+    private Long id;   // AGORA o ID é a PK gerada
 
     @Column(nullable = false, unique = true)
-    private Long id;
+    private String nome;
 
     @Column(nullable = false)
     private String clima;
@@ -26,25 +25,24 @@ public class Planeta implements Serializable {
 
     public Planeta() {}
 
-    public Planeta(String nome, String clima, String terreno){
+    public Planeta(String nome, String clima, String terreno) {
+        this.nome = nome;
         this.clima = clima;
         this.terreno = terreno;
-        this.nome = nome;
     }
-
-
-    //getters and setters
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
+
     public String getNome() { return nome; }
     public void setNome(String nome) { this.nome = nome; }
+
     public String getClima() { return clima; }
     public void setClima(String clima) { this.clima = clima; }
+
     public String getTerreno() { return terreno; }
     public void setTerreno(String terreno) { this.terreno = terreno; }
+
     public Integer getAparicoesFilmes() { return aparicoesFilmes; }
     public void setAparicoesFilmes(Integer aparicoesFilmes) { this.aparicoesFilmes = aparicoesFilmes; }
-
-
 }

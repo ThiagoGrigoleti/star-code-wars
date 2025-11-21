@@ -11,7 +11,13 @@ public class PlanetaDao {
     private EntityManagerFactory emf;
 
     public PlanetaDao() {
-        this.emf = Persistence.createEntityManagerFactory("PlanetasPU");
+        try {
+            this.emf = Persistence.createEntityManagerFactory("PlanetasPU");
+            System.out.println(" EntityManagerFactory criado com sucesso!");
+        } catch (Exception e) {
+            System.err.println(" ERRO ao criar EntityManagerFactory: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     public void salvar(Planeta planeta) {
