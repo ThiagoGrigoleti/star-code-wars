@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Cadastro de Planeta</title>
+</h:head>
+<h:body>
+    <h:form id="formPlaneta">
+        <p:growl id="msgs" showDetail="true"/>
+
+        <p:panel header="Cadastro de Planeta Star Wars">
+            <p:panelGrid columns="2" layout="grid" styleClass="ui-fluid">
+
+                <p:outputLabel value="Nome:" for="nome"/>
+                <p:inputText id="nome"
+                             value="#{planetaBean.planeta.nome}"
+                             required="true"
+                             requiredMessage="Nome é obrigatório"/>
+
+                <p:outputLabel value="Clima:" for="clima"/>
+                <p:inputText id="clima" value="#{planetaBean.planeta.clima}"/>
+
+                <p:outputLabel value="Terreno:" for="terreno"/>
+                <p:inputText id="terreno" value="#{planetaBean.planeta.terreno}"/>
+
+            </p:panelGrid>
+
+            <div style="text-align: right; margin-top: 20px">
+                <p:commandButton value="Salvar"
+                                 icon="pi pi-check"
+                                 action="#{planetaBean.adicionar}"
+                                 update="msgs"
+                                 styleClass="ui-button-success"/>
+
+                <p:button value="Voltar"
+                          icon="pi pi-arrow-left"
+                          outcome="list"
+                          styleClass="ui-button-secondary"
+                          style="margin-left: 10px"/>
+            </div>
+        </p:panel>
+    </h:form>
+</h:body>
+</html>
