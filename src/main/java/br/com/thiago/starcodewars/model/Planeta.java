@@ -9,7 +9,7 @@ public class Planeta implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;   // AGORA o ID é a PK gerada
+    private Long id; 
 
     @Column(nullable = false, unique = true)
     private String nome;
