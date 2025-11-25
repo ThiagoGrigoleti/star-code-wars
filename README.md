@@ -172,7 +172,7 @@ planetas/
 
 ## Autor
 
-Seu Nome - [GitHub](https://github.com/seu-usuario)
+Thiago Grigoleti
 
 ## Licença
 
