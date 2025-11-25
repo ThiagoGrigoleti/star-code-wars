@@ -48,7 +48,7 @@ br.starwars
 
 ### 1. Clonar o repositório
 ```bash
-git clone https://github.com/seu-usuario/starwars-planetas.git
+git clone https://github.com/ThiagoGrigoleti/starwars-planetas.git
 cd starwars-planetas
 ```
 
@@ -61,18 +61,6 @@ mvn clean package
 ```bash
 mvn test
 
-
-
-## Como Executar (Recomendado)
-
-Este projeto utiliza o plugin do **Jetty**, eliminando a necessidade de instalar e configurar um servidor Tomcat externamente.
-
-### 1\. Clonar o repositório
-
-```bash
-git clone [https://github.com/seu-usuario/starwars-planetas.git](https://github.com/seu-usuario/starwars-planetas.git)
-cd starwars-planetas
-```
 
 ### 2\. Rodar a aplicação
 
@@ -98,13 +86,6 @@ Para encerrar a execução, pressione `Ctrl + C` no terminal.
 
 -----
 
-## Executando Testes
-
-Para rodar os testes unitários e validar as regras de negócio:
-
-```bash
-mvn test
-```
 
 ## Estrutura do Banco de Dados
 
