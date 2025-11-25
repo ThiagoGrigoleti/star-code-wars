@@ -34,6 +34,6 @@
     </servlet-mapping>
 
     <welcome-file-list>
-        <welcome-file>index.xhtml</welcome-file>
+        <welcome-file>planetas.xhtml</welcome-file>
     </welcome-file-list>
 </web-app>
